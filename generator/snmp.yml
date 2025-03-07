@@ -21,63 +21,6 @@ modules:
       oid: 1.3.6.1.4.1.318.1.1.32.1.1
       type: gauge
       help: The total number of PDUs - 1.3.6.1.4.1.318.1.1.32.1.1
-    - name: pduNamePlateIndex
-      oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.1
-      type: gauge
-      help: The index of the PDU nameplate table entry - 1.3.6.1.4.1.318.1.1.32.1.2.1.1
-      indexes:
-      - labelname: pduNamePlateIndex
-        type: gauge
-      lookups:
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateName
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.2
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateLocation
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.3
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateIPAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateName
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.2
       type: DisplayString
@@ -103,6 +46,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -121,6 +69,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -160,6 +124,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -178,6 +147,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -217,6 +202,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -235,6 +225,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -274,6 +280,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -292,6 +303,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -331,6 +358,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -349,6 +381,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -388,6 +436,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -406,6 +459,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -445,6 +514,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -463,6 +537,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -503,6 +593,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -521,6 +616,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -560,6 +671,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -578,6 +694,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -617,6 +749,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -635,6 +772,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -674,6 +827,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -692,6 +850,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -731,6 +905,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -749,6 +928,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -788,6 +983,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -806,6 +1006,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -845,6 +1061,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -863,6 +1084,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -902,6 +1139,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -920,6 +1162,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2431,6 +2689,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2449,6 +2712,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2490,6 +2769,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2508,6 +2792,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2549,6 +2849,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2567,6 +2872,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2608,6 +2929,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2626,6 +2952,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2667,6 +3009,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2685,6 +3032,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2726,6 +3089,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2744,6 +3112,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2797,6 +3181,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2815,6 +3204,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -2862,6 +3267,11 @@ modules:
         type: InetAddress
       - labels:
         - pduNamePlateIndex
+        labelname: pduNamePlateInetAddressType
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
+        type: gauge
+      - labels:
+        - pduNamePlateIndex
         labelname: pduNamePlateInetNetMask
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
         type: InetAddress
@@ -2880,6 +3290,22 @@ modules:
         labelname: pduNamePlateModelNumber
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
         type: DisplayString
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateIPAddress
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
+        type: InetAddress
+      - labels:
+        - pduNamePlateIndex
+        labelname: pduNamePlateInetGateway
+        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
+        type: InetAddress
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
+      - labels: []
+        labelname: pduNamePlateIndex
       - labels: []
         labelname: pduNamePlateIndex
       - labels: []
@@ -3230,13 +3656,6 @@ modules:
       oid: 1.3.6.1.4.1.318.1.1.32.8.1.10
       type: DisplayString
       help: A string identifying the event for that last trap that was sent. - 1.3.6.1.4.1.318.1.1.32.8.1.10
-    - name: pduEhandleIndex
-      oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.1
-      type: gauge
-      help: The index of the PDU HID table entry - 1.3.6.1.4.1.318.1.1.32.9.1.1.1
-      indexes:
-      - labelname: pduEhandleIndex
-        type: gauge
     - name: pduEhandleAisle
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.2
       type: gauge
@@ -3244,6 +3663,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
       enum_values:
         1: hot
         2: cold
@@ -3254,6 +3709,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
       enum_values:
         1: unlock
         2: lock
@@ -3264,6 +3755,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleMechanicalLock
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.5
       type: gauge
@@ -3271,6 +3798,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
       enum_values:
         1: unlock
         2: lock
@@ -3281,6 +3844,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleHwVer
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
       type: DisplayString
@@ -3288,6 +3887,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleAutoLockTime
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
       type: gauge
@@ -3296,6 +3931,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleDoorOpenTime
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.9
       type: gauge
@@ -3303,6 +3974,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleMaxDoorOpenTime
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.10
       type: gauge
@@ -3311,6 +4018,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleUserPinLength
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
       type: gauge
@@ -3318,6 +4061,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
     - name: pduEhandleUserPinMode
       oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
       type: gauge
@@ -3325,6 +4104,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
       enum_values:
         1: visible
         2: hidden
@@ -3337,6 +4152,42 @@ modules:
       indexes:
       - labelname: pduEhandleIndex
         type: gauge
+      lookups:
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleHwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.7
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleFwVer
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.4
+        type: DisplayString
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinLength
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.11
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleAutoLockTime
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.8
+        type: gauge
+      - labels:
+        - pduEhandleIndex
+        labelname: pduEhandleUserPinMode
+        oid: 1.3.6.1.4.1.318.1.1.32.9.1.1.12
+        type: gauge
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
+      - labels: []
+        labelname: pduEhandleIndex
       enum_values:
         1: combined
         2: standalone

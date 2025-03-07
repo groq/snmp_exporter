@@ -41,28 +41,20 @@ modules:
     walk:
     - 1.3.6.1.4.1.318.1.1.32
     lookups:
+      # pduNamePlateIndex
       - source_indexes: [pduNamePlateIndex]
         lookup: pduNamePlateName
-        drop_source_indexes: true
       - source_indexes: [pduNamePlateIndex]
         lookup: pduNamePlateLocation
-        drop_source_indexes: true
       - source_indexes: [pduNamePlateIndex]
         lookup: pduNamePlateIPAddress
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateInetNetMask
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateInetGateway
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateMACAddress
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateModelNumber
-        drop_source_indexes: true
-
+    overrides:
+      pduNamePlateName:
+        ignore: true
+      pduNamePlateLocation:
+        ignore: true
+      pduNamePlateIPAddress:
+        ignore: true
 # APC/Schneider UPS Network Management Cards
 #
 # Note: older management cards only support SNMP v1 (AP9606 and

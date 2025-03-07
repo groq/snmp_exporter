@@ -44,61 +44,16 @@ modules:
       # pduNamePlateIndex
       - source_indexes: [pduNamePlateIndex]
         lookup: pduNamePlateName
-        drop_source_indexes: true
       - source_indexes: [pduNamePlateIndex]
         lookup: pduNamePlateLocation
-        drop_source_indexes: true
       - source_indexes: [pduNamePlateIndex]
         lookup: pduNamePlateIPAddress
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: "pduNamePlateInetAddressType"
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateInetNetMask
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateInetGateway
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateMACAddress
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateModelNumber
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: pduNamePlateIPAddress
-        drop_source_indexes: true
-      - source_indexes: [pduNamePlateIndex]
-        lookup: "pduNamePlateInetGateway"
-        drop_source_indexes: true
-      # pduEhandleIndex
-      - source_indexes: [pduEhandleIndex]
-        lookup: pduEhandleHwVer
-        drop_source_indexes: true
-      - source_indexes: [pduEhandleIndex]
-        lookup: pduEhandleFwVer
-        drop_source_indexes: true
-      - source_indexes: [pduEhandleIndex]
-        lookup: pduEhandleUserPinLength
-        drop_source_indexes: true
-      - source_indexes: [pduEhandleIndex]
-        lookup: "pduEhandleAutoLockTime" 
-        drop_source_indexes: true
-      - source_indexes: [pduEhandleIndex]
-        lookup: "pduEhandleUserPinMode" 
-        drop_source_indexes: true
-#"pduEhandleSerial"
-#"pduEhandleMechanicalLock" 
-#"pduEhandleDoorOpenTime" { 
-#"pduEhandleMaxDoorOpenTime"
-#"pduEhandleAisleControl" { 
-#"pduEhandleAisle" { label:{
-#"pduEhandleHandleOperation"
     overrides:
-      pduEhandleIndex:
+      pduNamePlateName:
         ignore: true
-      pduNamePlateIndex:
+      pduNamePlateLocation:
+        ignore: true
+      pduNamePlateIPAddress:
         ignore: true
 # APC/Schneider UPS Network Management Cards
 #

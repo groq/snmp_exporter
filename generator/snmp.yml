@@ -44,154 +44,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-    - name: pduNamePlateName
-      oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.2
-      type: DisplayString
-      help: A user-defined string identifying the PDU - 1.3.6.1.4.1.318.1.1.32.1.2.1.2
-      indexes:
-      - labelname: pduNamePlateIndex
-        type: gauge
-      lookups:
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateName
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.2
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateLocation
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.3
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateIPAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-    - name: pduNamePlateLocation
-      oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.3
-      type: DisplayString
-      help: A user-defined string identifying the location of PDU - 1.3.6.1.4.1.318.1.1.32.1.2.1.3
-      indexes:
-      - labelname: pduNamePlateIndex
-        type: gauge
-      lookups:
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateName
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.2
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateLocation
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.3
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateIPAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateInetAddressType
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.4
       type: gauge
@@ -215,97 +67,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-    - name: pduNamePlateIPAddress
-      oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
-      type: OctetString
-      help: The current IP address - 1.3.6.1.4.1.318.1.1.32.1.2.1.5
-      indexes:
-      - labelname: pduNamePlateIndex
-        type: gauge
-      lookups:
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateName
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.2
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateLocation
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.3
-        type: DisplayString
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateIPAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateInetNetMask
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
       type: OctetString
@@ -329,40 +90,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateInetGateway
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
       type: OctetString
@@ -386,40 +113,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateMACAddress
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
       type: PhysAddress48
@@ -443,40 +136,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateUTCTimeOffset
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.9
       type: DisplayString
@@ -501,40 +160,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateModelNumber
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
       type: DisplayString
@@ -558,40 +183,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlatePartNumber
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.11
       type: DisplayString
@@ -615,40 +206,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateSerialNumber
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.12
       type: DisplayString
@@ -672,40 +229,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateDateofManufacture
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.13
       type: DisplayString
@@ -729,40 +252,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateFirmwareVersion
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.14
       type: DisplayString
@@ -786,40 +275,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateFirmwareVersionTimeStamp
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.15
       type: DisplayString
@@ -843,40 +298,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduNamePlateType
       oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.16
       type: gauge
@@ -900,40 +321,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
       enum_values:
         1: singlePhase
         2: delta
@@ -2429,40 +1816,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduExternalSensorNamePlateName
       oid: 1.3.6.1.4.1.318.1.1.32.6.2.1.2
       type: DisplayString
@@ -2488,40 +1841,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduExternalSensorNamePlateDescription
       oid: 1.3.6.1.4.1.318.1.1.32.6.2.1.3
       type: DisplayString
@@ -2547,40 +1866,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduExternalSensorNamePlateLocation
       oid: 1.3.6.1.4.1.318.1.1.32.6.2.1.4
       type: DisplayString
@@ -2606,40 +1891,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduExternalSensorNamePlateSerialNumber
       oid: 1.3.6.1.4.1.318.1.1.32.6.2.1.5
       type: DisplayString
@@ -2665,40 +1916,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduExternalSensorNamePlateType
       oid: 1.3.6.1.4.1.318.1.1.32.6.2.1.6
       type: gauge
@@ -2724,40 +1941,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
       enum_values:
         1: temperature
         2: humidity
@@ -2795,40 +1978,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
       enum_values:
         0: logic
         1: degreeC
@@ -2860,40 +2009,6 @@ modules:
         labelname: pduNamePlateIPAddress
         oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.5
         type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetNetMask
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.6
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateInetGateway
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.7
-        type: InetAddress
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateMACAddress
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.8
-        type: PhysAddress48
-      - labels:
-        - pduNamePlateIndex
-        labelname: pduNamePlateModelNumber
-        oid: 1.3.6.1.4.1.318.1.1.32.1.2.1.10
-        type: DisplayString
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
-      - labels: []
-        labelname: pduNamePlateIndex
     - name: pduExternalSensorConfigIndex
       oid: 1.3.6.1.4.1.318.1.1.32.6.3.1.1
       type: gauge
